@@ -47,7 +47,7 @@ export default async function handler(req, res) {
       name: soup
         .find("div", "anime_video_body")
         .find("h1")
-        .text.replace(" at gogoanime", ""),
+        .text.replace(" at gogoanimes", ""),
       anime: soup.find("div", "anime-info").find("a").text,
       info: soup
         .find("div", "anime-info")
