@@ -27,7 +27,7 @@ export default async function handler(req, res) {
     for (var i = 0; i < episodes.length; i++) {
       eps.push({
         name: episodes[i].find("div", "name").text.replace("EP ", ""),
-        url: `/anime${episodes[i].find("a").attrs.href.replace(" ", "")}`,
+        url: `/anime${episodes[i].find("a").attrs.href.replace(" ", "https://api.amvstr.ml/api/v2/episode/${animen}")}`,
         type: episodes[i].find("div", "cate").text,
       });
     }
