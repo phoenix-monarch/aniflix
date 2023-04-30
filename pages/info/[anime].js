@@ -17,7 +17,7 @@ export default function Information({ data }) {
       for (var i = 0; i < episodes.length; i++) {
         eps.push({
           name: episodes[i].find("div", "name").text.replace("EP ", ""),
-          url: `/anime${episodes[i].find("a").attrs.href.replace(" ", "https://zoro.to/ajax/v2/episode/servers?episodeId=${episodeId}")}`,
+          url: `/anime${episodes[i].find("a").attrs.href.replace(" ", "")}`,
           type: episodes[i].find("div", "cate").text,
         });
       }
